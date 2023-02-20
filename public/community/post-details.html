@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/img/favicon.ico">
+	<title>Pet Community</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.css"
+		integrity="sha512-JzSVRb7c802/njMbV97pjo1wuJAE/6v9CvthGTDxiaZij/TFpPQmQPTcdXyUVucsvLtJBT6YwRb5LhVxX3pQHQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Custom styles for this template -->
+	<link href="assets/css/mediumish.css" rel="stylesheet">
+	<link href="assets/css/newpost.css" rel="stylesheet" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-----hold html css-->
+	<!-- slider stylesheet -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+	<!-- bootstrap core css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap"
+		rel="stylesheet">
+
+	<!-- responsive style -->
+	<link href="/community/assets/css/responsive.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.css"
+		integrity="sha512-JzSVRb7c802/njMbV97pjo1wuJAE/6v9CvthGTDxiaZij/TFpPQmQPTcdXyUVucsvLtJBT6YwRb5LhVxX3pQHQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Custom styles for this template -->
+	<link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="hero_area">
+		<!-- header section strats -->
+		<header class="header_section">
+			<div class="container-fluid">
+			  <nav class="navbar navbar-expand-lg custom_nav-container ">
+				<a class="navbar-brand" href="index.html">
+				  <img src="images/logo.png" alt="">
+				  <span>
+					Pet Adopt
+				  </span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+					<ul class="navbar-nav">
+					  <li class="nav-item active">
+						<a class="nav-link" href="/">主頁</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="adopt-pets.html">領養寵物</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="post-pets-info.html" id="post_pets">發佈領養</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./community/index.html">寵物社區</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="message-box.html" id="message_box">訊息欄</a>
+					  </li>
+					  <li class="nav-item dropdown" id="welcome-btn">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  UserName
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="post-pets.html" id="postPets">寵物列表</a>
+						  <a class="dropdown-item" href="setting.html" id="setting-btn">設定</a>
+						  <a class="dropdown-item" href="#" id="logout-btn">登出</a>
+						</div>
+					  </li>
+					  <li class="nav-item">
+						<a type="button" class="login-btn nav-link" id="login-btn">登入/註冊</a>
+					  </li>
+					</ul>
+				  </div>
+				  <div class="quote_btn-container  d-flex justify-content-center">
+				  </div>
+				</div>
+			  </nav>
+			</div>
+		  </header>
+		<!-- end header section -->
+		<!-- slider section -->
+		<div class="banner">
+		  Pet Adopt 是一個專為領養動物的平台，
+		  任何人或機構也可以上傳待領養的狗隻，<br>
+		  無需任何費用。我們希望透過應用程式，
+		  集中領養資訊，為被棄養動物提供一個尋家的機會，
+		  宣傳領養代替購買
+		</div>
+		<section class=" slider_section position-relative">
+		  <!-- <h1 class="carousel-title">🔥熱門寵物🔥</h1> -->
+	
+		  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+	
+			<div class="carousel-inner">
+	
+			  <div class="carousel-item active">
+				<div class="container-fluid">
+				  <div class="row">
+					<div class="col-md-6 offset-md-2 justify-right">
+					  <div class="slider_detail-box">
+						<h1>
+						  <div class="post-title">
+							名稱/標題
+						  </div>
+						</h1>
+						<div class="post-type">
+						  物種
+						</div>
+						<div class="post-species">
+						  品種
+						</div>
+						<p class="post-description">
+						  準備好領養你的寵物了嗎？<br>
+						  請記住，你將要對一條生命負責
+						</p>
+						<div class="btn-box">
+						  <a href="/adopt-pets.html" class="btn-1" id="adopt-post-btn">
+							現在領養
+						  </a>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-6 justify-left">
+					  <div class="slider_img-box">
+						<img id='post-photo' src="/pet-img/unknown_animal.jpg" alt="">
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="container-fluid">
+				  <div class="row">
+					<div class="col-md-6 offset-md-2 justify-right">
+					  <div class="slider_detail-box">
+						<h1>
+						  <div class="second-post-title">
+							名稱/標題
+						  </div>
+						</h1>
+						<div class="second-post-type">
+						  物種
+						</div>
+						<div class="second-post-species">
+						  品種
+						</div>
+						<p class="second-post-description">
+						  準備好領養你的寵物了嗎？<br>
+						  請記住，你將要對一條生命負責
+						</p>
+						<div class="btn-box">
+						  <a href="/adopt-pets.html" class="btn-1" id="second-adopt-post-btn">
+							Adopt now
+						  </a>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-6 justify-left">
+					  <div class="slider_img-box">
+						<img id='second-post-photo' src="/pet-img/unknown_animal.jpg" alt="">
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="container-fluid">
+				  <div class="row">
+					<div class="col-md-6 offset-md-2 justify-right">
+					  <div class="slider_detail-box">
+						<h1>
+						  <div class="third-post-title">
+							名稱/標題
+						  </div>
+						</h1>
+						<div class="third-post-type">
+						  物種
+						</div>
+						<div class="third-post-species">
+						  品種
+						</div>
+						<p>
+						  準備好領養你的寵物了嗎？<br>
+						  請記住，你將要對一條生命負責
+						</p>
+						<div class="btn-box">
+						  <a href="/adopt-pets.html" class="btn-1" id="third-adopt-post-btn">
+							Adopt now
+						  </a>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-6 justify-left">
+					  <div class="slider_img-box">
+						<img id='third-post-photo' src="/pet-img/unknown_animal.jpg" alt="">
+					  </div>
+					</div>
+				  </div>
+				</div>
+	
+		</section>
+		<!-- end slider section -->
+	  </div>
+	<!-- Begin Nav
+================================================== -->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+			data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+			aria-label="Toggle navigation">
+		</button>
+
+	</nav>
+	<!-- End Nav
+================================================== -->
+
+	<!-- Begin Article
+================================================== -->
+	<div class="container">
+		<div class="row">
+			<!-- Begin Post -->
+			<div class="col-md-8 col-md-offset-2 col-xs-12">
+				<div class="mainheading">
+
+					<!-- Begin Top Meta -->
+					<!-- <div class="row post-top-meta">
+						<div class="col-md-2">
+							<a href="author.html"><img class="author-thumb"
+									src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x"
+									alt="Sal"></a>
+						</div>
+						<div class="col-md-10">
+							<a class="link-dark" href="author.html">Sal</a><a href="#" class="btn follow">Follow</a>
+							<span class="author-description">Join us since 2012.</span>
+							<span class="post-date">22 July 2017</span><span class="dot"></span><span
+								class="post-read">6 min read</span>
+						</div>
+					</div> -->
+					<!-- End Top Menta -->
+
+					<h1 class="posttitle">18 Things You Should Learn Before Moving Into a New Home</h1>
+
+				</div>
+
+				<!-- Begin Featured Image -->
+				<img class="featured-image img-fluid" src="assets/img/demopic/10.jpg" alt="">
+				<!-- End Featured Image -->
+
+				<!-- Begin Post Content -->
+				<div class="article-post">
+					<p>
+						Holy grail funding non-disclosure agreement advisor ramen bootstrapping ecosystem. Beta
+						crowdfunding iteration assets business plan paradigm shift stealth mass market seed money
+						rockstar niche market marketing buzz market.
+					</p>
+					<p>
+						Burn rate release facebook termsheet equity technology. Interaction design rockstar network
+						effects handshake creative startup direct mailing. Technology influencer direct mailing
+						deployment return on investment seed round.
+					</p>
+					<p>
+						Termsheet business model canvas user experience churn rate low hanging fruit backing iteration
+						buyer seed money. Virality release launch party channels validation learning curve paradigm
+						shift hypotheses conversion. Stealth leverage freemium venture startup business-to-business
+						accelerator market.
+					</p>
+					<p>
+						Freemium non-disclosure agreement lean startup bootstrapping holy grail ramen MVP iteration
+						accelerator. Strategy market ramen leverage paradigm shift seed round entrepreneur crowdfunding
+						social proof angel investor partner network virality.
+					</p>
+				</div>
+				<!-- End Post Content -->
+
+
+			</div>
+			<!-- End Post -->
+
+		</div>
+	</div>
+	<!-- End Article
+================================================== -->
+
+	<div class="hideshare"></div>
+
+
+
+
+
+	<!-- Begin AlertBar
+================================================== -->
+	<div class="alertbar">
+		<!-- <div class="container text-center">
+			<img src="assets/img/logo.png" alt=""> &nbsp; Never miss a <b>story</b> from us, get weekly updates in your
+			inbox. <a href="#" class="btn subscribe">Get Updates</a> -->
+	</div>
+	</div>
+	<!-- End AlertBar
+================================================== -->
+
+	<!-- Begin Footer
+================================================== -->
+	<div class="container">
+		<div class="footer">
+			<!-- <p class="pull-left">
+			 Copyright &copy; 2017 Your Website Name
+		</p>
+		<p class="pull-right">
+			 Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
+		</p>
+		<div class="clearfix">
+		</div> -->
+		</div>
+	</div>
+	<!-- End Footer
+================================================== -->
+
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+		integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+		crossorigin="anonymous"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="assets/js/mediumish.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.min.js"
+		integrity="sha512-IYzd4A07K9kxY3b8YIXi8L0BmUPVvPlI+YpLOzKrIKA3sQ4gt43dYp+y6ip7C7LRLXYfMHikpxeprZh7dYQn+g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="/js/post-details.js"></script>
+
+	<script src="/js/login.js"></script>
+	<script src="/js/signup.js"></script>
+
+	<!-- Navbar's Script -->
+	<script src="/js/navbar.js"></script>
+
+</body>
+
+</html>
