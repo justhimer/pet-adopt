@@ -24,7 +24,7 @@ jobs:
           - 5432:5432
       steps:
         - users: action/checkout@v3
-        - run:
+        - run: |
           yarn install
         working-directory: ./
       
