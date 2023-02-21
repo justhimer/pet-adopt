@@ -2,7 +2,7 @@ name: petadopt
 on:
   push:
     branches:
-      - 'priduction'
+      - '*'
     workflow_dispatch:
 env:
   POSTGRES_DB: petadopt
@@ -10,6 +10,21 @@ env:
   POSTGRES_PASSWORD: postgres
   POSTGRES_HOST: postgres
 
-job:
+jobs:
   testing:
-    
+    runs-on: ubuntu-latest
+    container: node:latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES-DB: ${{env.POSTGRES_DB}}
+          POSTGRES-PASSWORD: ${{env.POSTGRES_PASSWORD}}
+        ports:
+          - 5432:5432
+      steps:
+        - users: action/checkout@v3
+        - run:
+          yarn install
+        working-directory: ./
+      
