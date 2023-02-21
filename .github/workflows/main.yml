@@ -1,1 +1,15 @@
+name: petadopt
+on:
+  push:
+    branches:
+      - 'priduction'
+    workflow_dispatch:
+env:
+  POSTGRES_DB: petadopt
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: postgres
 
+job:
+  testing:
+    
